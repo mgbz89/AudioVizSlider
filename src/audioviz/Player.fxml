@@ -22,7 +22,7 @@
             <Menu fx:id="bandsMenu" mnemonicParsing="false" text="Bands" />
         </menus>
       </MenuBar>
-      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass">
+      <AnchorPane id="AnchorPane" onMousePressed="#handleSliderMousePressed" onMouseReleased="#handleSliderMouseReleased" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass">
           <stylesheets>
               <URL value="@player.css" />
           </stylesheets>
@@ -44,7 +44,7 @@
                </font></Text>
             <Label layoutX="31.0" layoutY="161.0" text="Bands:" />
             <Text fx:id="bandsText" layoutX="86.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-            <Slider fx:id="timeSlider" layoutX="266.0" layoutY="63.0" prefHeight="16.0" prefWidth="476.0" />
+            <Slider fx:id="timeSlider" layoutX="266.0" layoutY="63.0" onMousePressed="#handleSliderMousePressed" onMouseReleased="#handleSliderMouseReleased" prefHeight="16.0" prefWidth="476.0" />
          </children>
       </AnchorPane>
    </children>
